@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Relasto",
     description: "A responsive short story-sharing site that displayed creative works and writings of the youth.",
-    image: "/images/relasto.png",
+    image: `${import.meta.env.BASE_URL}images/relasto.png`,
     skills: ["HTML", "CSS", "SASS", "Javascript"],
     github: true,
     githubUrl: "https://github.com/yourusername/relasto",
