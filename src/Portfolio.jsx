@@ -25,7 +25,7 @@ function Portfolio() {
             className="w-32 h-32 rounded-full mb-4 object-cover mx-auto"
           />
           <h1 className={`text-3xl font-bold mb-2 text-center ${gradientText}`}>
-            Mohammed Al Ani
+            ----
           </h1>
           <h2 className={`text-xl mb-1 ${gradientText}`}>
             Mechatronics Engineering @ UWaterloo
