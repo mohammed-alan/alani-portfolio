@@ -8,9 +8,9 @@ const projects = [
     image: "images/relasto.png",
     skills: ["HTML", "CSS", "SASS", "Javascript"],
     github: true,
-    githubUrl: "https://github.com/yourusername/relasto",
+    githubUrl: "https://github.com/mohammed-alan/rellasto.github.io",
     link: true,
-    linkUrl: "https://relasto.example.com",
+    linkUrl: "https://mohammed-alan.github.io/rellasto.github.io/",
     type: "Web Dev"
   },
   {
@@ -19,7 +19,7 @@ const projects = [
     image: "images/portfolio.png",
     skills: ["React", "Tailwind CSS", "Vite"],
     github: true,
-    githubUrl: "https://github.com/yourusername/portfolio-website",
+    githubUrl: "https://github.com/mohammed-alan/alani-portfolio",
     link: true,
     linkUrl: "https://yourportfolio.example.com",
     type: "Web Dev"
@@ -30,7 +30,7 @@ const projects = [
     image: "images/nlpbot.png",
     skills: ["Python", "Flask", "JavaScript", "HTML", "CSS"],
     github: true,
-    githubUrl: "https://github.com/yourusername/full-stack-nlp-chatbot",
+    githubUrl: "https://github.com/mohammed-alan/fullstack-nlp-chatbot",
     type: "Full Stack"
   },
   {
@@ -39,7 +39,7 @@ const projects = [
     image: "images/minematics.png",
     skills: ["Java", "Processing IDE", "Game Development"],
     github: true,
-    githubUrl: "https://github.com/yourusername/minematics",
+    githubUrl: "https://github.com/mohammed-alan/MineMatics-Game",
     type: "Game Dev"
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     image: "images/weather.png",
     skills: ["JavaScript", "HTML", "CSS", "API"],
     github: true,
-    githubUrl: "https://github.com/yourusername/weather-app",
+    githubUrl: "https://github.com/mohammed-alan/weather-app",
     type: "Backend"
   },
   {
@@ -57,7 +57,7 @@ const projects = [
     image: "images/curve.png",
     skills: ["Python", "NumPy", "SciPy", "Matplotlib", "Streamlit"],
     github: true,
-    githubUrl: "https://github.com/yourusername/curve-fitting",
+    githubUrl: "https://github.com/mohammed-alan/Curve-Fitting-Software",
     type: "Data Science"
   },
   {
@@ -66,7 +66,7 @@ const projects = [
     image: "images/todoapp.png",
     skills: ["React", "JavaScript", "CSS"],
     github: true,
-    githubUrl: "https://github.com/yourusername/todo-app",
+    githubUrl: "https://github.com/mohammed-alan/react-todo-app",
     type: "Web Dev"
   },
   {
