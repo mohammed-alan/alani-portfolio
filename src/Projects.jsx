@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Relasto",
     description: "A responsive short story-sharing site that displayed creative works and writings of the youth.",
-    image: "public/images/relasto.png",
+    image: "images/relasto.png",
     skills: ["HTML", "CSS", "SASS", "Javascript"],
     github: true,
     githubUrl: "https://github.com/yourusername/relasto",
@@ -16,7 +16,7 @@ const projects = [
   {
     title: "Portfolio Website",
     description: "A personal portfolio website showcasing my projects and skills. Built from SCRATCH",
-    image: "public/images/portfolio.png",
+    image: "images/portfolio.png",
     skills: ["React", "Tailwind CSS", "Vite"],
     github: true,
     githubUrl: "https://github.com/yourusername/portfolio-website",
@@ -27,7 +27,7 @@ const projects = [
   {
     title: "Full Stack NLP Chatbot",
     description: "Developed a full stack chatbot using NLP techniques to provide interactive user experiences.",
-    image: "public/images/nlpbot.png",
+    image: "images/nlpbot.png",
     skills: ["Python", "Flask", "JavaScript", "HTML", "CSS"],
     github: true,
     githubUrl: "https://github.com/yourusername/full-stack-nlp-chatbot",
@@ -36,7 +36,7 @@ const projects = [
   {
     title: "MineMatics: Minecraft Themed Math Game",
     description: "Created a Minecraft-themed game to teach math concepts through interactive gameplay. Game includes two modes and increasing difficuilty levels.",
-    image: "public/images/minematics.png",
+    image: "images/minematics.png",
     skills: ["Java", "Processing IDE", "Game Development"],
     github: true,
     githubUrl: "https://github.com/yourusername/minematics",
@@ -45,7 +45,7 @@ const projects = [
   {
     title: "API Fetched Weather App",
     description: "Built a weather application that fetches real-time data from a public API to display current weather conditions.",
-    image: "public/images/weather.png",
+    image: "images/weather.png",
     skills: ["JavaScript", "HTML", "CSS", "API"],
     github: true,
     githubUrl: "https://github.com/yourusername/weather-app",
@@ -54,7 +54,7 @@ const projects = [
   {
     title: "Curve Fitting Software",
     description: "Developed software to fit curves to data points using various mathematical models. Software includes manual and CSV data input. It also includes various methods of curve fitting such as polynomial, exponential, and logarithmic.",
-    image: "public/images/curve.png",
+    image: "images/curve.png",
     skills: ["Python", "NumPy", "SciPy", "Matplotlib", "Streamlit"],
     github: true,
     githubUrl: "https://github.com/yourusername/curve-fitting",
@@ -63,7 +63,7 @@ const projects = [
   {
     title: "To Do List App",
     description: "A simple to-do list application built with React to manage tasks efficiently.",
-    image: "public/images/todoapp.png",
+    image: "images/todoapp.png",
     skills: ["React", "JavaScript", "CSS"],
     github: true,
     githubUrl: "https://github.com/yourusername/todo-app",
@@ -72,14 +72,14 @@ const projects = [
   {
     title: "PID Robot Controller",
     description: "Designed a PID system to keep a robot on a straight path using Python and gyroscopic sensor data.",
-    image: "public/images/pid.jpg",
+    image: "images/pid.jpg",
     skills: ["Python", "Lego EV3", "Control Systems"],
     type: "Robotics"
   },
   {
     title: "Triboelectric Nanogenerator",
     description: "Developed a triboelectric nanogenerator to convert kinetic energy into electrical energy.",
-    image: "public/images/teng.png",
+    image: "images/teng.png",
     skills: ["Physics", "Engineering", "Prototyping"],
     type: "Engineering"
   }
