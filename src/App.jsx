@@ -13,7 +13,7 @@ function App() {
       <Portfolio/>
       <Projects/>
       <Certificates/>
-      <h1 className="mt-100 text-white">Hello</h1>      
+            
       </div>
     </>
   )
