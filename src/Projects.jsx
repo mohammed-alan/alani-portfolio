@@ -21,7 +21,7 @@ const projects = [
     github: true,
     githubUrl: "https://github.com/mohammed-alan/alani-portfolio",
     link: true,
-    linkUrl: "https://yourportfolio.example.com",
+    linkUrl: "https://mohammed-alan.github.io/alani-portfolio/",
     type: "Web Dev"
   },
   {
