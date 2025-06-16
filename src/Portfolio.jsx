@@ -1,9 +1,28 @@
-import { useState } from 'react';
-import './index.css'
-import Prompt from './Prompt.jsx';
+import { useState } from "react";
+import "./index.css";
+import Prompt from "./Prompt.jsx";
+import ResumePrompt from "./ResumePrompt.jsx";  // import new component
 
 function Portfolio() {
-  // const [count, setCount] = useState(0); // Unused, so commented out
+  const [showResumePrompt, setShowResumePrompt] = useState(false);
+
+  
+  const resumeLinks = {
+    hardware: "resumes/h-resume.pdf",
+    software: "resumes/swe-resume.pdf"
+  };
+
+  const handleResumeClick = () => {
+    setShowResumePrompt(true);
+  };
+
+  const handleSelectResume = (type) => {
+    setShowResumePrompt(false);
+    if (resumeLinks[type]) {
+      window.open(resumeLinks[type], "_blank");
+    }
+  };
+
   const desc = "";
   const background = "";
 
@@ -11,10 +30,6 @@ function Portfolio() {
 
   return (
     <div className={`min-h-screen relative overflow-hidden flex items-center justify-center ${background}`}>
-      {/* Animated Gradient Background */}
-
-
-
       {/* Main content */}
       <div className={`relative z-10 w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 absolute inset-0 z-0`}>
         {/* Left Side: Profile */}
@@ -57,15 +72,13 @@ function Portfolio() {
                 axiioo
               </div>
             </div>
-            <a
-              href="/path-to-your-resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+            {/* Resume Button */}
+            <button
+              onClick={handleResumeClick}
+              className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transform transition hover:scale-105 hover:-rotate-1"
             >
-              <button className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transform transition hover:scale-105 hover:-rotate-1">
-                Resume
-              </button>
-            </a>
+              Resume
+            </button>
           </div>
         </div>
 
@@ -93,7 +106,13 @@ Still evolving... just like my code.
         />
       </div>
 
-      
+      {/* Resume selection modal */}
+      {showResumePrompt && (
+        <ResumePrompt
+          onSelect={handleSelectResume}
+          onClose={() => setShowResumePrompt(false)}
+        />
+      )}
     </div>
   );
 }
