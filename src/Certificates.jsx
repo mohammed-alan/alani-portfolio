@@ -4,18 +4,18 @@ const certificates = [
   {
     title: "Machine Learning with Python: Foundations",
     description: "A comprehensive course covering the fundamentals of machine learning using Python.",
-    image: "/images/machine_learning.png",
+    image: "images/pythonml.jfif",
     skills: ["Python", "Machine Learning", "Data Science"],
     link: true,
-    linkUrl: "https://www.coursera.org/account/accomplishments/certificate/ml-foundations"
+    linkUrl: "https://www.linkedin.com/learning/certificates/09eef5d07b3333eedaff7cc2282fe4fb2e400e51474f052179c0c3570894be24?u=55034593"
   },
   {
     title: "MATLAB Onramp",
     description: "A beginner-friendly introduction to MATLAB, covering the basics of programming and data analysis.",
-    image: "/images/matlab_onramp.png",
+    image: "images/matlab.png",
     skills: ["MATLAB", "Data Analysis", "Programming"],
     link: true,
-    linkUrl: "https://matlabacademy.mathworks.com/details/matlab-onramp"
+    linkUrl: "https://www.linkedin.com/in/mohammed-al-anii/overlay/1736830201297/single-media-viewer/?profileId=ACoAAD254j4BPaKPEufiu1HLwmslJEhbVCiYzik"
   }
 ];
 
