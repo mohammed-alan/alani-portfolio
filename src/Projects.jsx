@@ -87,7 +87,7 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="z-10">
+    <div className="z-10 mt-10">
       <h2 className="text-3xl font-bold text-white mb-8 text-center">Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {projects.map((project, index) => (

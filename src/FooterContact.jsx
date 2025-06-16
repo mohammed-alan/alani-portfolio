@@ -22,6 +22,7 @@ const FooterContact = () => {
         <p className="text-sm select-none">
           &copy; {currentYear} Mohammed Al Ani. All rights reserved.
         </p>
+      
 
         <div className="flex space-x-6">
           {/*  social icons */}

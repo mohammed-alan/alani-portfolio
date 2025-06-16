@@ -85,24 +85,7 @@ function Portfolio() {
         {/* Right Side: Prompt Terminal */}
         <Prompt
           width="530px"
-          height="455px"
-          command={`root@uwaterloo:~ 
-┌──(mohammed㉿uwaterloo)-[~/portfolio]
-└─# whoami
-Mohammed Al Ani
-
-┌──(mohammed㉿uwaterloo)-[~/portfolio]
-└─# cat mohammed_info.txt
-University of Waterloo, BASc Mechatronics Engineering, Year 2
-Focus: Embedded Systems, Robotics, and Intelligent Control
-Skills: Python, JavaScript, React, C++, Data Analysis
-
-┌──(mohammed㉿uwaterloo)-[~/portfolio]
-└─# cat site_status.txt
-Still evolving... just like my code.
-
-┌──(mohammed㉿uwaterloo)-[~/portfolio]
-└─#`}
+          height="520px"
         />
       </div>
 
