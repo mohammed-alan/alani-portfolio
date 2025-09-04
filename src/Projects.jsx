@@ -3,85 +3,157 @@ import './index.css';
 
 const projects = [
   {
-    title: "Relasto",
-    description: "A responsive short story-sharing site that displayed creative works and writings of the youth.",
-    image: "images/relasto.png",
-    skills: ["HTML", "CSS", "SASS", "Javascript"],
+    title: "CarPal: Full Stack AI Solution",
+    description: "Developed a full stack AI-powered application where users can sign up, log in, and upload car images. The app uses Google Gemini to analyze the image and return car specifications such as make, model, year, and performance data. Users can view and delete their uploads from a personalized dashboard, and a featured car is displayed on the landing page. ",
+    image: "images/carpal.png",
+    skills: ["Express.JS", "MySQL", "TailwindCSS", "React", "Google Gemini", "REST API"],
     github: true,
-    githubUrl: "https://github.com/mohammed-alan/rellasto.github.io",
-    link: true,
-    linkUrl: "https://mohammed-alan.github.io/rellasto.github.io/",
-    type: "Web Dev"
+    githubURL: "https://github.com/mohammed-alan/CarPal",
+    link:false,
+    type: ""
+  }
+  ,
+  {
+    title: "Full Stack NLP Chatbot",
+    description: "Built an interactive chatbot leveraging natural language processing with NLTK and spaCy. The app supports intent recognition, entity extraction, and sentiment analysis, providing intelligent, context-aware responses. Features include a modern dark-themed interface, theme toggle, and typing indicators for enhanced realism. Developed with a Flask backend and a responsive JavaScript frontend.",
+    image: "images/nlpbot.png",
+    skills: ["Python", "Flask", "NLTK", "spaCy", "HTML", "CSS", "JavaScript"],
+    github: true,
+    githubUrl: "https://github.com/mohammed-alan/fullstack-nlp-chatbot",
+    type: ""
   },
   {
     title: "Portfolio Website",
-    description: "A personal portfolio website showcasing my projects and skills. Built from SCRATCH",
+    description: "A personal portfolio website designed from SCRATCH to showcase my projects, resumes, and contact information. Includes a built-in resume selector (hardware/software), animated social links, and a custom terminal-style prompt interface — all styled with TailwindCSS.",
     image: "images/portfolio.png",
-    skills: ["React", "Tailwind CSS", "Vite"],
+    skills: ["React", "Tailwind CSS", "Vite", "JavaScript"],
     github: true,
     githubUrl: "https://github.com/mohammed-alan/alani-portfolio",
     link: true,
     linkUrl: "https://mohammed-alan.github.io/alani-portfolio/",
-    type: "Web Dev"
+    type: ""
   },
   {
-    title: "Full Stack NLP Chatbot",
-    description: "Developed a full stack chatbot using NLP techniques to provide interactive user experiences.",
-    image: "images/nlpbot.png",
-    skills: ["Python", "Flask", "JavaScript", "HTML", "CSS"],
+  title: "YOLO + OpenCV Chocolate Detection",
+  description: "A real-time chocolate detection and calorie estimation system built with YOLOv8, OpenCV, and React. The system recognizes chocolates like Reese’s, Snickers, KitKat, Aero, and Twix, estimates their calories, and displays results on a live dashboard. The backend (Python + YOLOv8) handles object detection, while the frontend (React + Tailwind) shows a live video feed with detections synced via SocketIO.",
+  image: "images/yolo.png",
+  skills: ["YOLOv8", "OpenCV", "Python", "React", "Tailwind CSS", "SocketIO"],
+  github: true,
+  githubUrl: "https://github.com/mohammed-alan/yolo-snacks-tracker",
+  link: false,
+  linkUrl: "",
+  type: ""
+},
+{
+  title: "NoCode LaTeX Resume",
+  description: "An interactive web-based LaTeX resume editor that lets users build and customize resumes without touching LaTeX code. Built with React (frontend) and Node.js (backend), it supports adding, editing, and deleting resume sections with a real-time PDF preview. The backend compiles LaTeX into polished PDFs, making professional resume creation accessible to everyone.",
+  image: "images/nolatex.png",
+  skills: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "LaTeX"],
+  github: true,
+  githubUrl: "https://github.com/mohammed-alan/nocode-latex-resume",
+  link: false,
+  linkUrl: "",
+  type: ""
+}
+
+,
+{
+  title: "MCDiary",
+  description: "A Minecraft-inspired diary app built with React and Vite, featuring a nostalgic in-game book interface for multi-page entries. Includes animated Minecraft-style backgrounds, ambient music, and themed UI assets. Users can add, edit, and navigate up to 100 pages, copy entries to clipboard, and enjoy a fully responsive experience across devices.",
+  image: "images/mcdiary.png",
+  skills: ["React", "Vite", "Tailwind CSS", "JavaScript", "API Integration"],
+  github: true,
+  githubUrl: "https://github.com/mohammed-alan/mcdiary",
+  link: true,
+  linkUrl: "hhttps://mohammed-alan.github.io/mcdiary/",
+  type: ""
+},
+{
+  title: "Pan & Tilt Ultrasonic Scanner",
+  description: "A joystick-controlled pan-and-tilt system using an ultrasonic sensor to scan the environment. Built with Arduino, servos, and a custom breadboard circuit, the setup allows users to manually adjust the sensor's orientation to measure distances in different directions. Designed as a hands-on robotics/mechatronics experiment integrating hardware control and real-time sensing.",
+  image: "images/ultrasonic.jpg",
+  skills: ["Arduino", "C++", "Ultrasonic Sensors", "Servos", "Electronics Prototyping"],
+  github: true,
+  githubUrl: "https://github.com/mohammed-alan/pan-and-tilt-arduino-code",
+  link: false,
+  linkUrl: "",
+  type: ""
+}
+
+
+  ,
+  {
+    title: "Relasto",
+    description: "Developed a responsive and accessible short story publishing site using HTML, SCSS, and vanilla JavaScript. The site features a structured layout, modular SCSS styles, and smooth user navigation. It includes a homepage, dynamic About & Contact section, and integration with Instagram for community engagement. Deployed via GitHub Pages.",
+    image: "images/relasto.png",
+    skills: ["HTML", "CSS", "SCSS", "Javascript"],
     github: true,
-    githubUrl: "https://github.com/mohammed-alan/fullstack-nlp-chatbot",
-    type: "Full Stack"
+    githubUrl: "https://github.com/mohammed-alan/rellasto.github.io",
+    link: true,
+    linkUrl: "https://mohammed-alan.github.io/rellasto.github.io/",
+    type: ""
   },
+  {
+    title: "Expressjs.Yourself",
+    description: "A lightweight blog platform built with Express.js, EJS, and SQLite. Users can register, log in, and manage their own posts with full CRUD functionality. Features include JWT-based authentication, secure password hashing, a featured random post display, and a personal user dashboard. The project focuses on backend architecture with minimal frontend styling.",
+    image: "images/expressyourself.png",
+    skills: ["Express.js", "EJS", "SQLite", "JWT", "bcrypt", "Tailwind CSS"],
+    github: true,
+    githubUrl: "https://github.com/mohammed-alan/Expressjs.Yourself",
+    type: ""
+  }
+  ,
   {
     title: "MineMatics: Minecraft Themed Math Game",
-    description: "Created a Minecraft-themed game to teach math concepts through interactive gameplay. Game includes two modes and increasing difficuilty levels.",
+    description: "Designed and developed an educational math game using Java and the Processing IDE to make learning addition fun for kids. The game features two modes: Campaign Mode with progressive difficulty and bonus typing challenges, and Infinity Mode with endless questions and increasing speed. Set in a Minecraft-inspired environment, players must answer correctly to escape zombies. Includes a help page and responsive visual feedback.",
     image: "images/minematics.png",
-    skills: ["Java", "Processing IDE", "Game Development"],
+    skills: ["Java", "Processing IDE", "Game Development", "UI/UX"],
     github: true,
     githubUrl: "https://github.com/mohammed-alan/MineMatics-Game",
-    type: "Game Dev"
+    type: ""
   },
   {
     title: "API Fetched Weather App",
-    description: "Built a weather application that fetches real-time data from a public API to display current weather conditions.",
+    description: "Developed a simple and user-friendly weather application that fetches and displays real-time weather data for any city using the OpenWeatherMap API. The app shows the city name, current temperature in Celsius, humidity level, and the local time of the selected city, providing users with up-to-date and relevant weather information.",
     image: "images/weather.png",
-    skills: ["JavaScript", "HTML", "CSS", "API"],
+    skills: ["JavaScript", "HTML/CSS", "Fetch API", "DOM Manipulation"],
     github: true,
     githubUrl: "https://github.com/mohammed-alan/weather-app",
-    type: "Backend"
+    type: ""
   },
   {
     title: "Curve Fitting Software",
-    description: "Developed software to fit curves to data points using various mathematical models. Software includes manual and CSV data input. It also includes various methods of curve fitting such as polynomial, exponential, and logarithmic.",
+    description: "Created a web-based curve fitting tool that allows users to input data manually or upload CSV files, then fit curves using multiple models such as Linear, Polynomial, Exponential, Gaussian, and Histogram. The app visualizes the original data alongside the fitted curve, displays the fitting equation, and evaluates fit quality using metrics like Mean Absolute Error (MAE) and R-squared. Users can download both the fitted data as CSV and the plot as a PNG image.",
     image: "images/curve.png",
-    skills: ["Python", "NumPy", "SciPy", "Matplotlib", "Streamlit"],
+    skills: ["Python", "NumPy", "SciPy", "Matplotlib", "Streamlit", "Data Visualization"],
     github: true,
     githubUrl: "https://github.com/mohammed-alan/Curve-Fitting-Software",
-    type: "Data Science"
+    type: ""
   },
   {
     title: "To Do List App",
-    description: "A simple to-do list application built with React to manage tasks efficiently.",
+    description: "Built a simple and modern To-Do List application using React functional components and hooks. The app allows users to add, delete, and reorder tasks to manage priorities efficiently. Input validation prevents empty tasks, and the UI features clean styling with flexbox and hover effects for smooth user interaction.",
     image: "images/todoapp.png",
     skills: ["React", "JavaScript", "CSS"],
     github: true,
     githubUrl: "https://github.com/mohammed-alan/react-todo-app",
-    type: "Web Dev"
+    type: ""
   },
   {
     title: "PID Robot Controller",
     description: "Designed a PID system to keep a robot on a straight path using Python and gyroscopic sensor data.",
     image: "images/pid.jpg",
     skills: ["Python", "Lego EV3", "Control Systems"],
-    type: "Robotics"
+    type: ""
   },
   {
     title: "Triboelectric Nanogenerator",
     description: "Developed a triboelectric nanogenerator to convert kinetic energy into electrical energy.",
     image: "images/teng.png",
     skills: ["Physics", "Engineering", "Prototyping"],
-    type: "Engineering"
+    link: true,
+    linkUrl: "https://www.linkedin.com/in/mohammed-al-anii/overlay/1736832674825/single-media-viewer/?profileId=ACoAAD254j4BPaKPEufiu1HLwmslJEhbVCiYzik",
+    type: ""
   }
 ];
 
