@@ -36,6 +36,9 @@ GPA: 3.94 | Co-op Program | Scholarships: $10,000+
 - AI Developer: Python, PyTorch, OpenCV, Numpy, Pandas  
 - Systems: C/C++, Embedded Systems, Arduino, Raspberry Pi  
 - CAD & Simulation: SolidWorks, AutoCAD, ANSYS, MATLAB 
+
+> status
+This portfolio is still in progress...
 `;
 
     const [htmlText, setHtmlText] = useState("");

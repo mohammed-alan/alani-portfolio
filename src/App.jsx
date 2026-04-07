@@ -4,6 +4,7 @@ import Portfolio from './Portfolio.jsx'
 import Projects from './Projects.jsx'
 import Certificates from './Certificates.jsx'
 import AnimatedBackground from './AnimatedBackground.jsx'
+import FooterContact from './FooterContact.jsx'
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
       <Portfolio/>
       <Projects/>
       <Certificates/>
-      <h1 className="mt-100 text-white">Hello</h1>      
+      <FooterContact/>
+            
       </div>
     </>
   )

@@ -46,6 +46,7 @@ const projects = [
     type: ""
   },
   {
+<<<<<<< HEAD
     title: "Expressjs.Yourself",
     description: "A lightweight blog platform built with Express.js, EJS, and SQLite. Users can register, log in, and manage their own posts with full CRUD functionality. Features include JWT-based authentication, secure password hashing, a featured random post display, and a personal user dashboard. The project focuses on backend architecture with minimal frontend styling.",
     image: "images/expressyourself.png",
@@ -85,11 +86,55 @@ const projects = [
   {
     title: "To Do List App",
     description: "Built a simple and modern To-Do List application using React functional components and hooks. The app allows users to add, delete, and reorder tasks to manage priorities efficiently. Input validation prevents empty tasks, and the UI features clean styling with flexbox and hover effects for smooth user interaction.",
+=======
+    title: "Full Stack NLP Chatbot",
+    description: "Developed a full stack chatbot using NLP techniques to provide interactive user experiences.",
+    image: "images/nlpbot.png",
+    skills: ["Python", "Flask", "JavaScript", "HTML", "CSS"],
+    github: true,
+    githubUrl: "https://github.com/mohammed-alan/fullstack-nlp-chatbot",
+    type: "Full Stack"
+  },
+  {
+    title: "MineMatics: Minecraft Themed Math Game",
+    description: "Created a Minecraft-themed game to teach math concepts through interactive gameplay. Game includes two modes and increasing difficuilty levels.",
+    image: "images/minematics.png",
+    skills: ["Java", "Processing IDE", "Game Development"],
+    github: true,
+    githubUrl: "https://github.com/mohammed-alan/MineMatics-Game",
+    type: "Game Dev"
+  },
+  {
+    title: "API Fetched Weather App",
+    description: "Built a weather application that fetches real-time data from a public API to display current weather conditions.",
+    image: "images/weather.png",
+    skills: ["JavaScript", "HTML", "CSS", "API"],
+    github: true,
+    githubUrl: "https://github.com/mohammed-alan/weather-app",
+    type: "Backend"
+  },
+  {
+    title: "Curve Fitting Software",
+    description: "Developed software to fit curves to data points using various mathematical models. Software includes manual and CSV data input. It also includes various methods of curve fitting such as polynomial, exponential, and logarithmic.",
+    image: "images/curve.png",
+    skills: ["Python", "NumPy", "SciPy", "Matplotlib", "Streamlit"],
+    github: true,
+    githubUrl: "https://github.com/mohammed-alan/Curve-Fitting-Software",
+    type: "Data Science"
+  },
+  {
+    title: "To Do List App",
+    description: "A simple to-do list application built with React to manage tasks efficiently.",
+>>>>>>> fcf593e4cb409a023efeabbc46163b9127910099
     image: "images/todoapp.png",
     skills: ["React", "JavaScript", "CSS"],
     github: true,
     githubUrl: "https://github.com/mohammed-alan/react-todo-app",
+<<<<<<< HEAD
     type: ""
+=======
+    type: "Web Dev"
+>>>>>>> fcf593e4cb409a023efeabbc46163b9127910099
   },
   {
     title: "PID Robot Controller",
