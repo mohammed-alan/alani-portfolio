@@ -3,91 +3,115 @@ import './index.css';
 
 const projects = [
   {
-    title: "Relasto",
-    description: "A responsive short story-sharing site that displayed creative works and writings of the youth.",
-    image: "/images/relasto.png",
-    skills: ["HTML", "CSS", "SASS", "Javascript"],
+    title: "CarPal: Full Stack AI Solution",
+    description: "Developed a full stack AI-powered application where users can sign up, log in, and upload car images. The app uses Google Gemini to analyze the image and return car specifications such as make, model, year, and performance data. Users can view and delete their uploads from a personalized dashboard, and a featured car is displayed on the landing page. ",
+    image: "images/carpal.png",
+    skills: ["Express.JS", "MySQL", "TailwindCSS", "React", "Google Gemini", "REST API"],
     github: true,
-    githubUrl: "https://github.com/yourusername/relasto",
-    link: true,
-    linkUrl: "https://relasto.example.com",
-    type: "Web Dev"
+    githubURL: "https://github.com/mohammed-alan/CarPal",
+    link:false,
+    type: ""
+  }
+  ,
+  {
+    title: "Full Stack NLP Chatbot",
+    description: "Built an interactive chatbot leveraging natural language processing with NLTK and spaCy. The app supports intent recognition, entity extraction, and sentiment analysis, providing intelligent, context-aware responses. Features include a modern dark-themed interface, theme toggle, and typing indicators for enhanced realism. Developed with a Flask backend and a responsive JavaScript frontend.",
+    image: "images/nlpbot.png",
+    skills: ["Python", "Flask", "NLTK", "spaCy", "HTML", "CSS", "JavaScript"],
+    github: true,
+    githubUrl: "https://github.com/mohammed-alan/fullstack-nlp-chatbot",
+    type: ""
   },
   {
     title: "Portfolio Website",
-    description: "A personal portfolio website showcasing my projects and skills. Built from SCRATCH",
-    image: "/images/portfolio.png",
-    skills: ["React", "Tailwind CSS", "Vite"],
+    description: "A personal portfolio website designed from SCRATCH to showcase my projects, resumes, and contact information. Includes a built-in resume selector (hardware/software), animated social links, and a custom terminal-style prompt interface — all styled with TailwindCSS.",
+    image: "images/portfolio.png",
+    skills: ["React", "Tailwind CSS", "Vite", "JavaScript"],
     github: true,
-    githubUrl: "https://github.com/yourusername/portfolio-website",
+    githubUrl: "https://github.com/mohammed-alan/alani-portfolio",
     link: true,
-    linkUrl: "https://yourportfolio.example.com",
-    type: "Web Dev"
+    linkUrl: "https://mohammed-alan.github.io/alani-portfolio/",
+    type: ""
+  },
+  
+  {
+    title: "Relasto",
+    description: "Developed a responsive and accessible short story publishing site using HTML, SCSS, and vanilla JavaScript. The site features a structured layout, modular SCSS styles, and smooth user navigation. It includes a homepage, dynamic About & Contact section, and integration with Instagram for community engagement. Deployed via GitHub Pages.",
+    image: "images/relasto.png",
+    skills: ["HTML", "CSS", "SCSS", "Javascript"],
+    github: true,
+    githubUrl: "https://github.com/mohammed-alan/rellasto.github.io",
+    link: true,
+    linkUrl: "https://mohammed-alan.github.io/rellasto.github.io/",
+    type: ""
   },
   {
-    title: "Full Stack NLP Chatbot",
-    description: "Developed a full stack chatbot using NLP techniques to provide interactive user experiences.",
-    image: "/images/nlpbot.png",
-    skills: ["Python", "Flask", "JavaScript", "HTML", "CSS"],
+    title: "Expressjs.Yourself",
+    description: "A lightweight blog platform built with Express.js, EJS, and SQLite. Users can register, log in, and manage their own posts with full CRUD functionality. Features include JWT-based authentication, secure password hashing, a featured random post display, and a personal user dashboard. The project focuses on backend architecture with minimal frontend styling.",
+    image: "images/expressyourself.png",
+    skills: ["Express.js", "EJS", "SQLite", "JWT", "bcrypt", "Tailwind CSS"],
     github: true,
-    githubUrl: "https://github.com/yourusername/full-stack-nlp-chatbot",
-    type: "Full Stack"
-  },
+    githubUrl: "https://github.com/mohammed-alan/Expressjs.Yourself",
+    type: ""
+  }
+  ,
   {
     title: "MineMatics: Minecraft Themed Math Game",
-    description: "Created a Minecraft-themed game to teach math concepts through interactive gameplay. Game includes two modes and increasing difficuilty levels.",
-    image: "/images/minematics.png",
-    skills: ["Java", "Processing IDE", "Game Development"],
+    description: "Designed and developed an educational math game using Java and the Processing IDE to make learning addition fun for kids. The game features two modes: Campaign Mode with progressive difficulty and bonus typing challenges, and Infinity Mode with endless questions and increasing speed. Set in a Minecraft-inspired environment, players must answer correctly to escape zombies. Includes a help page and responsive visual feedback.",
+    image: "images/minematics.png",
+    skills: ["Java", "Processing IDE", "Game Development", "UI/UX"],
     github: true,
-    githubUrl: "https://github.com/yourusername/minematics",
-    type: "Game Dev"
+    githubUrl: "https://github.com/mohammed-alan/MineMatics-Game",
+    type: ""
   },
   {
     title: "API Fetched Weather App",
-    description: "Built a weather application that fetches real-time data from a public API to display current weather conditions.",
-    image: "/images/weather.png",
-    skills: ["JavaScript", "HTML", "CSS", "API"],
+    description: "Developed a simple and user-friendly weather application that fetches and displays real-time weather data for any city using the OpenWeatherMap API. The app shows the city name, current temperature in Celsius, humidity level, and the local time of the selected city, providing users with up-to-date and relevant weather information.",
+    image: "images/weather.png",
+    skills: ["JavaScript", "HTML/CSS", "Fetch API", "DOM Manipulation"],
     github: true,
-    githubUrl: "https://github.com/yourusername/weather-app",
-    type: "Backend"
+    githubUrl: "https://github.com/mohammed-alan/weather-app",
+    type: ""
   },
   {
     title: "Curve Fitting Software",
-    description: "Developed software to fit curves to data points using various mathematical models. Software includes manual and CSV data input. It also includes various methods of curve fitting such as polynomial, exponential, and logarithmic.",
-    image: "/images/curve.png",
-    skills: ["Python", "NumPy", "SciPy", "Matplotlib", "Streamlit"],
+    description: "Created a web-based curve fitting tool that allows users to input data manually or upload CSV files, then fit curves using multiple models such as Linear, Polynomial, Exponential, Gaussian, and Histogram. The app visualizes the original data alongside the fitted curve, displays the fitting equation, and evaluates fit quality using metrics like Mean Absolute Error (MAE) and R-squared. Users can download both the fitted data as CSV and the plot as a PNG image.",
+    image: "images/curve.png",
+    skills: ["Python", "NumPy", "SciPy", "Matplotlib", "Streamlit", "Data Visualization"],
     github: true,
-    githubUrl: "https://github.com/yourusername/curve-fitting",
-    type: "Data Science"
+    githubUrl: "https://github.com/mohammed-alan/Curve-Fitting-Software",
+    type: ""
   },
   {
     title: "To Do List App",
-    description: "A simple to-do list application built with React to manage tasks efficiently.",
-    image: "/images/todoapp.png",
+    description: "Built a simple and modern To-Do List application using React functional components and hooks. The app allows users to add, delete, and reorder tasks to manage priorities efficiently. Input validation prevents empty tasks, and the UI features clean styling with flexbox and hover effects for smooth user interaction.",
+    image: "images/todoapp.png",
     skills: ["React", "JavaScript", "CSS"],
     github: true,
-    githubUrl: "https://github.com/yourusername/todo-app",
-    type: "Web Dev"
+    githubUrl: "https://github.com/mohammed-alan/react-todo-app",
+    type: ""
   },
   {
     title: "PID Robot Controller",
     description: "Designed a PID system to keep a robot on a straight path using Python and gyroscopic sensor data.",
-    image: "/images/pid.jpg",
+    image: "images/pid.jpg",
     skills: ["Python", "Lego EV3", "Control Systems"],
-    type: "Robotics"
+    type: ""
   },
   {
     title: "Triboelectric Nanogenerator",
     description: "Developed a triboelectric nanogenerator to convert kinetic energy into electrical energy.",
-    image: "/images/teng.png",
+    image: "images/teng.png",
     skills: ["Physics", "Engineering", "Prototyping"],
-    type: "Engineering"
+    link: true,
+    linkUrl: "https://www.linkedin.com/in/mohammed-al-anii/overlay/1736832674825/single-media-viewer/?profileId=ACoAAD254j4BPaKPEufiu1HLwmslJEhbVCiYzik",
+    type: ""
   }
 ];
 
 function Projects() {
   return (
-    <div className="z-10">
+    <div className="z-10 mt-10">
       <h2 className="text-3xl font-bold text-white mb-8 text-center">Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {projects.map((project, index) => (
