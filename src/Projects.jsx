@@ -11,8 +11,7 @@ const projects = [
     githubURL: "https://github.com/mohammed-alan/CarPal",
     link:false,
     type: ""
-  }
-  ,
+  },
   {
     title: "Full Stack NLP Chatbot",
     description: "Built an interactive chatbot leveraging natural language processing with NLTK and spaCy. The app supports intent recognition, entity extraction, and sentiment analysis, providing intelligent, context-aware responses. Features include a modern dark-themed interface, theme toggle, and typing indicators for enhanced realism. Developed with a Flask backend and a responsive JavaScript frontend.",
@@ -34,54 +33,49 @@ const projects = [
     type: ""
   },
   {
-  title: "YOLO + OpenCV Chocolate Detection",
-  description: "A real-time chocolate detection and calorie estimation system built with YOLOv8, OpenCV, and React. The system recognizes chocolates like Reese’s, Snickers, KitKat, Aero, and Twix, estimates their calories, and displays results on a live dashboard. The backend (Python + YOLOv8) handles object detection, while the frontend (React + Tailwind) shows a live video feed with detections synced via SocketIO.",
-  image: "images/yolo.png",
-  skills: ["YOLOv8", "OpenCV", "Python", "React", "Tailwind CSS", "SocketIO"],
-  github: true,
-  githubUrl: "https://github.com/mohammed-alan/yolo-snacks-tracker",
-  link: false,
-  linkUrl: "",
-  type: ""
-},
-{
-  title: "NoCode LaTeX Resume",
-  description: "An interactive web-based LaTeX resume editor that lets users build and customize resumes without touching LaTeX code. Built with React (frontend) and Node.js (backend), it supports adding, editing, and deleting resume sections with a real-time PDF preview. The backend compiles LaTeX into polished PDFs, making professional resume creation accessible to everyone.",
-  image: "images/nolatex.png",
-  skills: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "LaTeX"],
-  github: true,
-  githubUrl: "https://github.com/mohammed-alan/nocode-latex-resume",
-  link: false,
-  linkUrl: "",
-  type: ""
-}
-
-,
-{
-  title: "MCDiary",
-  description: "A Minecraft-inspired diary app built with React and Vite, featuring a nostalgic in-game book interface for multi-page entries. Includes animated Minecraft-style backgrounds, ambient music, and themed UI assets. Users can add, edit, and navigate up to 100 pages, copy entries to clipboard, and enjoy a fully responsive experience across devices.",
-  image: "images/mcdiary.png",
-  skills: ["React", "Vite", "Tailwind CSS", "JavaScript", "API Integration"],
-  github: true,
-  githubUrl: "https://github.com/mohammed-alan/mcdiary",
-  link: true,
-  linkUrl: "hhttps://mohammed-alan.github.io/mcdiary/",
-  type: ""
-},
-{
-  title: "Pan & Tilt Ultrasonic Scanner",
-  description: "A joystick-controlled pan-and-tilt system using an ultrasonic sensor to scan the environment. Built with Arduino, servos, and a custom breadboard circuit, the setup allows users to manually adjust the sensor's orientation to measure distances in different directions. Designed as a hands-on robotics/mechatronics experiment integrating hardware control and real-time sensing.",
-  image: "images/ultrasonic.jpg",
-  skills: ["Arduino", "C++", "Ultrasonic Sensors", "Servos", "Electronics Prototyping"],
-  github: true,
-  githubUrl: "https://github.com/mohammed-alan/pan-and-tilt-arduino-code",
-  link: false,
-  linkUrl: "",
-  type: ""
-}
-
-
-  ,
+    title: "YOLO + OpenCV Chocolate Detection",
+    description: "A real-time chocolate detection and calorie estimation system built with YOLOv8, OpenCV, and React. The system recognizes chocolates like Reese's, Snickers, KitKat, Aero, and Twix, estimates their calories, and displays results on a live dashboard. The backend (Python + YOLOv8) handles object detection, while the frontend (React + Tailwind) shows a live video feed with detections synced via SocketIO.",
+    image: "images/yolo.png",
+    skills: ["YOLOv8", "OpenCV", "Python", "React", "Tailwind CSS", "SocketIO"],
+    github: true,
+    githubUrl: "https://github.com/mohammed-alan/yolo-snacks-tracker",
+    link: false,
+    linkUrl: "",
+    type: ""
+  },
+  {
+    title: "NoCode LaTeX Resume",
+    description: "An interactive web-based LaTeX resume editor that lets users build and customize resumes without touching LaTeX code. Built with React (frontend) and Node.js (backend), it supports adding, editing, and deleting resume sections with a real-time PDF preview. The backend compiles LaTeX into polished PDFs, making professional resume creation accessible to everyone.",
+    image: "images/nolatex.png",
+    skills: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "LaTeX"],
+    github: true,
+    githubUrl: "https://github.com/mohammed-alan/nocode-latex-resume",
+    link: false,
+    linkUrl: "",
+    type: ""
+  },
+  {
+    title: "MCDiary",
+    description: "A Minecraft-inspired diary app built with React and Vite, featuring a nostalgic in-game book interface for multi-page entries. Includes animated Minecraft-style backgrounds, ambient music, and themed UI assets. Users can add, edit, and navigate up to 100 pages, copy entries to clipboard, and enjoy a fully responsive experience across devices.",
+    image: "images/mcdiary.png",
+    skills: ["React", "Vite", "Tailwind CSS", "JavaScript", "API Integration"],
+    github: true,
+    githubUrl: "https://github.com/mohammed-alan/mcdiary",
+    link: true,
+    linkUrl: "hhttps://mohammed-alan.github.io/mcdiary/",
+    type: ""
+  },
+  {
+    title: "Pan & Tilt Ultrasonic Scanner",
+    description: "A joystick-controlled pan-and-tilt system using an ultrasonic sensor to scan the environment. Built with Arduino, servos, and a custom breadboard circuit, the setup allows users to manually adjust the sensor's orientation to measure distances in different directions. Designed as a hands-on robotics/mechatronics experiment integrating hardware control and real-time sensing.",
+    image: "images/ultrasonic.jpg",
+    skills: ["Arduino", "C++", "Ultrasonic Sensors", "Servos", "Electronics Prototyping"],
+    github: true,
+    githubUrl: "https://github.com/mohammed-alan/pan-and-tilt-arduino-code",
+    link: false,
+    linkUrl: "",
+    type: ""
+  },
   {
     title: "Relasto",
     description: "Developed a responsive and accessible short story publishing site using HTML, SCSS, and vanilla JavaScript. The site features a structured layout, modular SCSS styles, and smooth user navigation. It includes a homepage, dynamic About & Contact section, and integration with Instagram for community engagement. Deployed via GitHub Pages.",
@@ -94,10 +88,6 @@ const projects = [
     type: ""
   },
   {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 782b2aa77ad1e65322aa4e1db6ae8285962d5ee8
     title: "Expressjs.Yourself",
     description: "A lightweight blog platform built with Express.js, EJS, and SQLite. Users can register, log in, and manage their own posts with full CRUD functionality. Features include JWT-based authentication, secure password hashing, a featured random post display, and a personal user dashboard. The project focuses on backend architecture with minimal frontend styling.",
     image: "images/expressyourself.png",
@@ -105,10 +95,7 @@ const projects = [
     github: true,
     githubUrl: "https://github.com/mohammed-alan/Expressjs.Yourself",
     type: ""
-  }
-  ,
-<<<<<<< HEAD
-=======
+  },
   {
     title: "MineMatics: Minecraft Themed Math Game",
     description: "Designed and developed an educational math game using Java and the Processing IDE to make learning addition fun for kids. The game features two modes: Campaign Mode with progressive difficulty and bonus typing challenges, and Infinity Mode with endless questions and increasing speed. Set in a Minecraft-inspired environment, players must answer correctly to escape zombies. Includes a help page and responsive visual feedback.",
@@ -139,64 +126,11 @@ const projects = [
   {
     title: "To Do List App",
     description: "Built a simple and modern To-Do List application using React functional components and hooks. The app allows users to add, delete, and reorder tasks to manage priorities efficiently. Input validation prevents empty tasks, and the UI features clean styling with flexbox and hover effects for smooth user interaction.",
-=======
-    title: "Full Stack NLP Chatbot",
-    description: "Developed a full stack chatbot using NLP techniques to provide interactive user experiences.",
-    image: "images/nlpbot.png",
-    skills: ["Python", "Flask", "JavaScript", "HTML", "CSS"],
-    github: true,
-    githubUrl: "https://github.com/mohammed-alan/fullstack-nlp-chatbot",
-    type: "Full Stack"
-  },
->>>>>>> 782b2aa77ad1e65322aa4e1db6ae8285962d5ee8
-  {
-    title: "MineMatics: Minecraft Themed Math Game",
-    description: "Designed and developed an educational math game using Java and the Processing IDE to make learning addition fun for kids. The game features two modes: Campaign Mode with progressive difficulty and bonus typing challenges, and Infinity Mode with endless questions and increasing speed. Set in a Minecraft-inspired environment, players must answer correctly to escape zombies. Includes a help page and responsive visual feedback.",
-    image: "images/minematics.png",
-    skills: ["Java", "Processing IDE", "Game Development", "UI/UX"],
-    github: true,
-    githubUrl: "https://github.com/mohammed-alan/MineMatics-Game",
-    type: ""
-  },
-  {
-    title: "API Fetched Weather App",
-    description: "Developed a simple and user-friendly weather application that fetches and displays real-time weather data for any city using the OpenWeatherMap API. The app shows the city name, current temperature in Celsius, humidity level, and the local time of the selected city, providing users with up-to-date and relevant weather information.",
-    image: "images/weather.png",
-    skills: ["JavaScript", "HTML/CSS", "Fetch API", "DOM Manipulation"],
-    github: true,
-    githubUrl: "https://github.com/mohammed-alan/weather-app",
-    type: ""
-  },
-  {
-    title: "Curve Fitting Software",
-    description: "Created a web-based curve fitting tool that allows users to input data manually or upload CSV files, then fit curves using multiple models such as Linear, Polynomial, Exponential, Gaussian, and Histogram. The app visualizes the original data alongside the fitted curve, displays the fitting equation, and evaluates fit quality using metrics like Mean Absolute Error (MAE) and R-squared. Users can download both the fitted data as CSV and the plot as a PNG image.",
-    image: "images/curve.png",
-    skills: ["Python", "NumPy", "SciPy", "Matplotlib", "Streamlit", "Data Visualization"],
-    github: true,
-    githubUrl: "https://github.com/mohammed-alan/Curve-Fitting-Software",
-    type: ""
-  },
-  {
-    title: "To Do List App",
-<<<<<<< HEAD
-    description: "Built a simple and modern To-Do List application using React functional components and hooks. The app allows users to add, delete, and reorder tasks to manage priorities efficiently. Input validation prevents empty tasks, and the UI features clean styling with flexbox and hover effects for smooth user interaction.",
-=======
-    description: "A simple to-do list application built with React to manage tasks efficiently.",
->>>>>>> fcf593e4cb409a023efeabbc46163b9127910099
->>>>>>> 782b2aa77ad1e65322aa4e1db6ae8285962d5ee8
     image: "images/todoapp.png",
     skills: ["React", "JavaScript", "CSS"],
     github: true,
     githubUrl: "https://github.com/mohammed-alan/react-todo-app",
-<<<<<<< HEAD
     type: ""
-=======
-<<<<<<< HEAD
-    type: ""
-=======
-    type: "Web Dev"
->>>>>>> fcf593e4cb409a023efeabbc46163b9127910099
->>>>>>> 782b2aa77ad1e65322aa4e1db6ae8285962d5ee8
   },
   {
     title: "PID Robot Controller",
@@ -236,14 +170,13 @@ function Projects() {
               <div className="p-6 flex flex-col justify-between flex-grow">
                 <div>
                   <div className="flex items-center gap-2 mb-2 flex-wrap">
-  <h3 className="text-xl font-semibold text-gray-100">{project.title}</h3>
-  {project.type && (
-    <span className="text-xs font-bold bg-blue-700 text-white px-2 py-1 rounded-sm hover:bg-blue-500 transition">
-      {project.type.toUpperCase()}
-    </span>
-  )}
-</div>
-
+                    <h3 className="text-xl font-semibold text-gray-100">{project.title}</h3>
+                    {project.type && (
+                      <span className="text-xs font-bold bg-blue-700 text-white px-2 py-1 rounded-sm hover:bg-blue-500 transition">
+                        {project.type.toUpperCase()}
+                      </span>
+                    )}
+                  </div>
 
                   <p className="text-gray-200 mb-4">{project.description}</p>
                 </div>
