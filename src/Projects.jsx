@@ -94,6 +94,10 @@ const projects = [
     type: ""
   },
   {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 782b2aa77ad1e65322aa4e1db6ae8285962d5ee8
     title: "Expressjs.Yourself",
     description: "A lightweight blog platform built with Express.js, EJS, and SQLite. Users can register, log in, and manage their own posts with full CRUD functionality. Features include JWT-based authentication, secure password hashing, a featured random post display, and a personal user dashboard. The project focuses on backend architecture with minimal frontend styling.",
     image: "images/expressyourself.png",
@@ -103,6 +107,8 @@ const projects = [
     type: ""
   }
   ,
+<<<<<<< HEAD
+=======
   {
     title: "MineMatics: Minecraft Themed Math Game",
     description: "Designed and developed an educational math game using Java and the Processing IDE to make learning addition fun for kids. The game features two modes: Campaign Mode with progressive difficulty and bonus typing challenges, and Infinity Mode with endless questions and increasing speed. Set in a Minecraft-inspired environment, players must answer correctly to escape zombies. Includes a help page and responsive visual feedback.",
@@ -133,11 +139,64 @@ const projects = [
   {
     title: "To Do List App",
     description: "Built a simple and modern To-Do List application using React functional components and hooks. The app allows users to add, delete, and reorder tasks to manage priorities efficiently. Input validation prevents empty tasks, and the UI features clean styling with flexbox and hover effects for smooth user interaction.",
+=======
+    title: "Full Stack NLP Chatbot",
+    description: "Developed a full stack chatbot using NLP techniques to provide interactive user experiences.",
+    image: "images/nlpbot.png",
+    skills: ["Python", "Flask", "JavaScript", "HTML", "CSS"],
+    github: true,
+    githubUrl: "https://github.com/mohammed-alan/fullstack-nlp-chatbot",
+    type: "Full Stack"
+  },
+>>>>>>> 782b2aa77ad1e65322aa4e1db6ae8285962d5ee8
+  {
+    title: "MineMatics: Minecraft Themed Math Game",
+    description: "Designed and developed an educational math game using Java and the Processing IDE to make learning addition fun for kids. The game features two modes: Campaign Mode with progressive difficulty and bonus typing challenges, and Infinity Mode with endless questions and increasing speed. Set in a Minecraft-inspired environment, players must answer correctly to escape zombies. Includes a help page and responsive visual feedback.",
+    image: "images/minematics.png",
+    skills: ["Java", "Processing IDE", "Game Development", "UI/UX"],
+    github: true,
+    githubUrl: "https://github.com/mohammed-alan/MineMatics-Game",
+    type: ""
+  },
+  {
+    title: "API Fetched Weather App",
+    description: "Developed a simple and user-friendly weather application that fetches and displays real-time weather data for any city using the OpenWeatherMap API. The app shows the city name, current temperature in Celsius, humidity level, and the local time of the selected city, providing users with up-to-date and relevant weather information.",
+    image: "images/weather.png",
+    skills: ["JavaScript", "HTML/CSS", "Fetch API", "DOM Manipulation"],
+    github: true,
+    githubUrl: "https://github.com/mohammed-alan/weather-app",
+    type: ""
+  },
+  {
+    title: "Curve Fitting Software",
+    description: "Created a web-based curve fitting tool that allows users to input data manually or upload CSV files, then fit curves using multiple models such as Linear, Polynomial, Exponential, Gaussian, and Histogram. The app visualizes the original data alongside the fitted curve, displays the fitting equation, and evaluates fit quality using metrics like Mean Absolute Error (MAE) and R-squared. Users can download both the fitted data as CSV and the plot as a PNG image.",
+    image: "images/curve.png",
+    skills: ["Python", "NumPy", "SciPy", "Matplotlib", "Streamlit", "Data Visualization"],
+    github: true,
+    githubUrl: "https://github.com/mohammed-alan/Curve-Fitting-Software",
+    type: ""
+  },
+  {
+    title: "To Do List App",
+<<<<<<< HEAD
+    description: "Built a simple and modern To-Do List application using React functional components and hooks. The app allows users to add, delete, and reorder tasks to manage priorities efficiently. Input validation prevents empty tasks, and the UI features clean styling with flexbox and hover effects for smooth user interaction.",
+=======
+    description: "A simple to-do list application built with React to manage tasks efficiently.",
+>>>>>>> fcf593e4cb409a023efeabbc46163b9127910099
+>>>>>>> 782b2aa77ad1e65322aa4e1db6ae8285962d5ee8
     image: "images/todoapp.png",
     skills: ["React", "JavaScript", "CSS"],
     github: true,
     githubUrl: "https://github.com/mohammed-alan/react-todo-app",
+<<<<<<< HEAD
     type: ""
+=======
+<<<<<<< HEAD
+    type: ""
+=======
+    type: "Web Dev"
+>>>>>>> fcf593e4cb409a023efeabbc46163b9127910099
+>>>>>>> 782b2aa77ad1e65322aa4e1db6ae8285962d5ee8
   },
   {
     title: "PID Robot Controller",
