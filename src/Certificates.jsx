@@ -3,98 +3,86 @@ import React from "react";
 const certificates = [
   {
     title: "Machine Learning with Python: Foundations",
-    description: "A comprehensive course covering the fundamentals of machine learning using Python.",
+    description:
+      "A comprehensive course covering the fundamentals of machine learning using Python.",
     image: "images/pythonml.jfif",
     skills: ["Python", "Machine Learning", "Data Science"],
     link: true,
-    linkUrl: "https://www.linkedin.com/learning/certificates/09eef5d07b3333eedaff7cc2282fe4fb2e400e51474f052179c0c3570894be24?u=55034593"
+    linkUrl:
+      "https://www.linkedin.com/learning/certificates/09eef5d07b3333eedaff7cc2282fe4fb2e400e51474f052179c0c3570894be24?u=55034593",
   },
   {
     title: "MATLAB Onramp",
-    description: "A beginner-friendly introduction to MATLAB, covering the basics of programming and data analysis.",
+    description:
+      "A beginner-friendly introduction to MATLAB, covering the basics of programming and data analysis.",
     image: "images/matlab.png",
     skills: ["MATLAB", "Data Analysis", "Programming"],
     link: true,
-    linkUrl: "https://www.linkedin.com/in/mohammed-al-anii/overlay/1736830201297/single-media-viewer/?profileId=ACoAAD254j4BPaKPEufiu1HLwmslJEhbVCiYzik"
-  }
+    linkUrl:
+      "https://www.linkedin.com/in/mohammed-al-anii/overlay/1736830201297/single-media-viewer/?profileId=ACoAAD254j4BPaKPEufiu1HLwmslJEhbVCiYzik",
+  },
 ];
 
 function Certificates() {
   return (
-    <div className="z-10 p-8">
-      <h2 className="text-3xl font-bold text-white mb-8 text-center">Certificates</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div className="z-10 py-16 px-4">
+      <h2 className="text-3xl font-bold text-white mb-2 text-center">Certificates</h2>
+      <p className="text-zinc-400 text-sm text-center mb-12">
+        Courses and certifications I've completed
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
         {certificates.map((certificate, index) => (
-          <div key={index} className="relative group">
-            {/* Neon glow background */}
-            <div className="absolute inset-0 rounded-lg blur-xl opacity-40 group-hover:opacity-80 transition duration-500 bg-gradient-to-br from-blue-600 via-black-500 to-red-600 z-0"></div>
+          <div key={index} className="group relative">
+            {/* Hover glow */}
+            <div className="absolute -inset-0.5 rounded-xl blur-xl opacity-0 group-hover:opacity-40 transition duration-500 bg-sky-500/20 z-0"></div>
 
-            {/* Card content */}
-            <div className="relative z-10 flex flex-col justify-between h-full border-zinc-500 bg-gradient-to-r from-zinc-900 via-gray-900 to-gray-950 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform duration-300 border border-gray-700 cursor-pointer">
-              <img
-                src={certificate.image}
-                alt={certificate.title}
-                className="w-full h-48 object-cover"
-              />
+            {/* Card */}
+            <div className="relative z-10 flex flex-col h-full bg-zinc-950 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-700 transition-all duration-300">
+              {/* Image */}
+              <div className="relative overflow-hidden">
+                <img
+                  src={certificate.image}
+                  alt={certificate.title}
+                  className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent"></div>
+              </div>
 
-              <div className="p-6 flex flex-col justify-between flex-grow">
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-100 mb-2">{certificate.title}</h3>
-                  <p className="text-gray-300 mb-4">{certificate.description}</p>
-                </div>
+              <div className="p-5 flex flex-col flex-grow">
+                <h3 className="text-base font-semibold text-white mb-2 leading-tight">
+                  {certificate.title}
+                </h3>
+                <p className="text-zinc-300 text-sm leading-relaxed mb-4">
+                  {certificate.description}
+                </p>
 
-                <div className="mt-auto flex flex-wrap items-center justify-between gap-2">
-                  {/* Skills badges */}
-                  <div className="flex flex-wrap gap-2 flex-grow min-w-0">
+                {/* Bottom area */}
+                <div className="mt-auto pt-3 border-t border-zinc-800 flex flex-wrap items-end justify-between gap-3">
+                  {/* Skills */}
+                  <div className="flex flex-wrap gap-1.5 flex-grow min-w-0">
                     {certificate.skills.map((skill, i) => (
                       <span
                         key={i}
-                        className="font-bold bg-green-700 text-white text-xs px-2 py-1 rounded-sm hover:bg-green-600 transition duration-200 whitespace-nowrap"
+                        className="text-[11px] font-medium bg-zinc-900 text-zinc-300 px-2 py-0.5 rounded-md border border-zinc-800 hover:bg-zinc-800 hover:text-white transition duration-200"
                       >
-                        {skill.toUpperCase()}
+                        {skill}
                       </span>
                     ))}
                   </div>
 
-                  {/* GitHub and Link icons */}
-                  <div className="flex gap-2 flex-shrink-0 mt-2 sm:mt-0">
-                    {certificate.github && (
-                      <a
-                        href={certificate.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-gray-800 bg-opacity-75 text-white p-2 rounded-full hover:bg-gray-700 transition"
-                        aria-label={`${certificate.title} GitHub Repository`}
-                      >
-                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                          <path
-                            fillRule="evenodd"
-                            d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.166 6.84 9.49.5.092.682-.217.682-.482 
-                            0-.237-.009-.868-.013-1.703-2.782.605-3.37-1.342-3.37-1.342-.454-1.153-1.11-1.46-1.11-1.46
-                            -.907-.62.069-.608.069-.608 1.004.07 1.532 1.03 1.532 1.03.892 1.527 2.34 1.086 
-                            2.91.83.092-.647.35-1.086.636-1.337-2.22-.253-4.555-1.11-4.555-4.94 
-                            0-1.09.39-1.98 1.029-2.68-.103-.254-.446-1.272.098-2.65 
-                            0 0 .84-.27 2.75 1.025a9.56 9.56 0 012.5-.336c.85.004 1.705.115 2.5.337 
-                            1.91-1.296 2.75-1.025 2.75-1.025.546 1.378.203 2.396.1 2.65.64.7 
-                            1.028 1.59 1.028 2.68 0 3.84-2.337 4.685-4.565 4.93.36.31.68.92.68 
-                            1.85 0 1.335-.013 2.415-.013 2.743 0 .268.18.58.688.48A10.005 
-                            10.005 0 0022 12c0-5.52-4.48-10-10-10z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </a>
-                    )}
-
+                  {/* Link */}
+                  <div className="flex gap-2 flex-shrink-0">
                     {certificate.link && (
                       <a
                         href={certificate.linkUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-gray-800 bg-opacity-75 text-white p-2 rounded-full hover:bg-gray-700 transition"
+                        className="text-zinc-400 hover:text-white p-1.5 rounded-lg hover:bg-zinc-800 transition-all duration-200"
                         aria-label={`${certificate.title} Certificate Link`}
                       >
                         <svg
-                          className="w-6 h-6"
+                          className="w-5 h-5"
                           fill="none"
                           stroke="currentColor"
                           strokeWidth="2"

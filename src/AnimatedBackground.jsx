@@ -1,58 +1,58 @@
 import React, { useEffect, useState } from "react";
 
 export default function AnimatedBackground({
-  circles = 15,
+  orbs = 8,
   colorPalette = [
-    "rgba(23, 15, 42, 0.4)",
-    "rgba(139, 28, 31, 0.45)",
-    "rgba(10, 10, 223, 0.55)",
-    "rgba(179, 115, 32, 0.69)",
-    "rgba(134, 25, 109, 0.52)",
-    "rgba(184, 189, 205, 0.35)",
-    "rgba(48, 48, 52, 0.4)",
-    "rgba(30, 30, 35, 0.4)",
-    "rgba(60, 58, 54, 0.45)",
-    "rgba(35, 41, 52, 0.4)",
+    "rgba(255, 255, 255, 0.025)", // faint white
+    "rgba(255, 255, 255, 0.02)",  // fainter white
+    "rgba(56, 189, 248, 0.04)",   // subtle sky accent
+    "rgba(39, 39, 42, 0.4)",      // zinc-800
+    "rgba(24, 24, 27, 0.45)",     // zinc-900
+    "rgba(82, 82, 91, 0.2)",      // zinc-600
+    "rgba(56, 189, 248, 0.03)",   // very faint sky
+    "rgba(63, 63, 70, 0.3)",      // zinc-700
   ],
-  sizeRange = [40, 100],
-  durationRange = [10, 20], // very slow animation
-  delayRange = [0, 10],
-  moveDistance = 30,
-  blurClass = "blur-sm", // less or no blur
-  background = "bg-black",
+  sizeRange = [200, 500],
+  durationRange = [25, 45],
+  delayRange = [0, 15],
+  moveDistance = 60,
 }) {
   const [items, setItems] = useState([]);
 
- useEffect(() => {
-  const [minSize, maxSize] = sizeRange;
-  const [minDuration, maxDuration] = durationRange;
-  const [minDelay, maxDelay] = delayRange;
+  useEffect(() => {
+    const [minSize, maxSize] = sizeRange;
+    const [minDuration, maxDuration] = durationRange;
+    const [minDelay, maxDelay] = delayRange;
 
-  const newItems = Array.from({ length: circles }).map(() => ({
-    size: minSize + Math.random() * (maxSize - minSize),
-    top: Math.random() * 100,
-    left: Math.random() * 100,
-    delay: minDelay + Math.random() * (maxDelay - minDelay),
-    duration: minDuration + Math.random() * (maxDuration - minDuration),
-    color: colorPalette[Math.floor(Math.random() * colorPalette.length)],
-  }));
-  setItems(newItems);
-}, []); // run once only
-
+    const newItems = Array.from({ length: orbs }).map(() => ({
+      size: minSize + Math.random() * (maxSize - minSize),
+      top: Math.random() * 100,
+      left: Math.random() * 100,
+      delay: minDelay + Math.random() * (maxDelay - minDelay),
+      duration: minDuration + Math.random() * (maxDuration - minDuration),
+      color: colorPalette[Math.floor(Math.random() * colorPalette.length)],
+      dx1: (Math.random() - 0.5) * moveDistance * 2,
+      dy1: (Math.random() - 0.5) * moveDistance * 2,
+      dx2: (Math.random() - 0.5) * moveDistance * 2,
+      dy2: (Math.random() - 0.5) * moveDistance * 2,
+    }));
+    setItems(newItems);
+  }, []);
 
   return (
-    <div className={`fixed inset-0 z-0 w-screen h-screen overflow-hidden pointer-events-none ${background}`}>
+    <div className="fixed inset-0 z-0 w-screen h-screen overflow-hidden pointer-events-none bg-black">
       {items.map(({ size, top, left, delay, duration, color }, i) => (
         <div
           key={i}
-          className={`absolute rounded-full ${blurClass}`}
+          className="absolute rounded-full"
           style={{
             width: `${size}px`,
             height: `${size}px`,
             top: `${top}%`,
             left: `${left}%`,
             backgroundColor: color,
-            animation: `float${i} ${duration}s cubic-bezier(0.42, 0, 0.58, 1) infinite`,
+            filter: "blur(80px)",
+            animation: `drift${i} ${duration}s ease-in-out infinite`,
             animationDelay: `${delay}s`,
             willChange: "transform",
           }}
@@ -62,13 +62,11 @@ export default function AnimatedBackground({
       <style>
         {items
           .map(
-            (_, i) => `
-            @keyframes float${i} {
-              0%   { transform: translate(0, 0); }
-              25%  { transform: translate(${moveDistance}px, ${-moveDistance}px); }
-              50%  { transform: translate(0px, ${moveDistance}px); }
-              75%  { transform: translate(${-moveDistance}px, ${-moveDistance}px); }
-              100% { transform: translate(0, 0); }
+            (item, i) => `
+            @keyframes drift${i} {
+              0%, 100% { transform: translate(0, 0) scale(1); }
+              33%  { transform: translate(${item.dx1}px, ${item.dy1}px) scale(1.05); }
+              66%  { transform: translate(${item.dx2}px, ${item.dy2}px) scale(0.95); }
             }
           `
           )
