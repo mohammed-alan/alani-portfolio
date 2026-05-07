@@ -1,8 +1,31 @@
 @import 'tailwindcss';
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #000;
+    color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
 @theme {
   --color-red: #f87171;
   --color-green: #34d399;
   --color-blue: #3b82f6;
   /* Add more colors as needed */
+}
+
+@keyframes showreel-fade {
+  from {
+    opacity: 0.72;
+    transform: scale(1.012);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

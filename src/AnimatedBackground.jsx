@@ -3,14 +3,14 @@ import React, { useEffect, useState } from "react";
 export default function AnimatedBackground({
   orbs = 8,
   colorPalette = [
-    "rgba(255, 255, 255, 0.025)", // faint white
-    "rgba(255, 255, 255, 0.02)",  // fainter white
-    "rgba(56, 189, 248, 0.04)",   // subtle sky accent
-    "rgba(39, 39, 42, 0.4)",      // zinc-800
-    "rgba(24, 24, 27, 0.45)",     // zinc-900
-    "rgba(82, 82, 91, 0.2)",      // zinc-600
-    "rgba(56, 189, 248, 0.03)",   // very faint sky
-    "rgba(63, 63, 70, 0.3)",      // zinc-700
+    "rgba(255, 255, 255, 0.018)",
+    "rgba(255, 255, 255, 0.014)",
+    "rgba(82, 82, 91, 0.16)",
+    "rgba(39, 39, 42, 0.18)",
+    "rgba(24, 24, 27, 0.24)",
+    "rgba(113, 113, 122, 0.12)",
+    "rgba(63, 63, 70, 0.16)",
+    "rgba(255, 255, 255, 0.01)",
   ],
   sizeRange = [200, 500],
   durationRange = [25, 45],

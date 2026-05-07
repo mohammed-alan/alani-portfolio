@@ -7,10 +7,10 @@ const FooterContact = () => {
   return (
     <footer className="relative w-full z-10 mt-16">
       {/* Top fade-in border line */}
-      <div className="h-px bg-gradient-to-r from-transparent via-sky-500/40 to-transparent"></div>
+      <div className="h-px bg-white/10"></div>
 
       {/* Main footer content */}
-      <div className="bg-black/80 backdrop-blur-md pt-12 pb-8">
+      <div className="bg-black pt-12 pb-8">
         <div className="max-w-4xl mx-auto px-6 flex flex-col items-center gap-8">
           {/* CTA section */}
           <div className="text-center">
@@ -19,7 +19,7 @@ const FooterContact = () => {
             </p>
             <a
               href={`mailto:${email}`}
-              className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-white font-semibold py-2.5 px-8 rounded-lg shadow-lg shadow-sky-500/20 hover:shadow-sky-500/40 transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center gap-2 bg-white hover:bg-zinc-200 text-black font-bold py-2.5 px-8 rounded-full transition-all duration-300"
               aria-label="Contact Me"
             >
               <svg
@@ -40,7 +40,7 @@ const FooterContact = () => {
           </div>
 
           {/* Divider */}
-          <div className="w-24 h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent"></div>
+          <div className="w-24 h-px bg-white/15"></div>
 
           {/* Social icons */}
           <div className="flex items-center gap-5">

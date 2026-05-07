@@ -181,7 +181,7 @@ const projects = [
 function Projects() {
   return (
     <div className="z-10 py-16 px-4">
-      <h2 className="text-3xl font-bold text-white mb-2 text-center">Projects</h2>
+      <h2 className="text-4xl font-bold text-white mb-2 text-center">Projects</h2>
       <p className="text-zinc-500 text-sm text-center mb-12">
         A collection of things I've built and explored
       </p>
@@ -190,10 +190,10 @@ function Projects() {
         {projects.map((project, index) => (
           <div key={index} className="group relative">
             {/* Hover glow — subtle */}
-            <div className="absolute -inset-0.5 rounded-xl blur-xl opacity-0 group-hover:opacity-30 transition duration-500 bg-white/10 z-0"></div>
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 border border-white/20 z-0"></div>
 
             {/* Card */}
-            <div className="relative z-10 flex flex-col h-full bg-black border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-600 transition-all duration-300">
+            <div className="relative z-10 flex flex-col h-full bg-black border border-white/15 overflow-hidden hover:border-white/35 transition-all duration-300">
               {/* Image */}
               <div className="relative overflow-hidden">
                 <img
@@ -212,7 +212,7 @@ function Projects() {
                     {project.title}
                   </h3>
                   {project.type && (
-                    <span className="text-[10px] font-bold tracking-wider bg-zinc-900 text-zinc-300 border border-zinc-700 px-2 py-0.5 rounded-full uppercase flex-shrink-0">
+                    <span className="text-[10px] font-bold tracking-wider bg-white text-black border border-white px-2 py-0.5 rounded-full uppercase flex-shrink-0">
                       {project.type.toUpperCase()}
                     </span>
                   )}
@@ -224,13 +224,13 @@ function Projects() {
                 </p>
 
                 {/* Bottom area */}
-                <div className="mt-auto pt-3 border-t border-zinc-800 flex flex-wrap items-end justify-between gap-3">
+                <div className="mt-auto pt-3 border-t border-white/10 flex flex-wrap items-end justify-between gap-3">
                   {/* Skills */}
                   <div className="flex flex-wrap gap-1.5 flex-grow min-w-0">
                     {project.skills.map((skill, i) => (
                       <span
                         key={i}
-                        className="text-[11px] font-medium bg-zinc-900 text-zinc-300 px-2 py-0.5 rounded-md border border-zinc-800 hover:bg-zinc-800 hover:text-white transition duration-200"
+                        className="text-[11px] font-medium bg-black text-zinc-300 px-2 py-0.5 rounded-full border border-white/15 hover:border-white/40 hover:text-white transition duration-200"
                       >
                         {skill}
                       </span>
@@ -244,7 +244,7 @@ function Projects() {
                         href={project.githubUrl || project.githubURL}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-zinc-500 hover:text-white p-1.5 rounded-lg hover:bg-zinc-900 transition-all duration-200"
+                        className="text-zinc-500 hover:text-white p-1.5 rounded-full hover:bg-white/10 transition-all duration-200"
                         aria-label={`${project.title} GitHub Repository`}
                       >
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -261,7 +261,7 @@ function Projects() {
                         href={project.linkUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-zinc-500 hover:text-white p-1.5 rounded-lg hover:bg-zinc-900 transition-all duration-200"
+                        className="text-zinc-500 hover:text-white p-1.5 rounded-full hover:bg-white/10 transition-all duration-200"
                         aria-label={`${project.title} Live Website`}
                       >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
